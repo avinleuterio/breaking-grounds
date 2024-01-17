@@ -16,25 +16,6 @@ export default function AdminView({ productData, fetchData }) {
         setIsEditModalOpen(true);
     };
 
-    // const handleAction = (productId, type) => {
-    //     fetch(`${process.env.REACT_APP_API_URL}/product/${productId}/${type}`, {
-    //         method: "PUT",
-    //         headers: {
-    //             "Content-Type": "application/json",
-    //             "Authorization": `Bearer ${localStorage.getItem('token')}`
-    //         }
-    //     })
-    //     .then(res => res.json())
-    //     .then(data => {
-    //         Swal.fire({
-    //             title: data.success ? "Success" : "Error",
-    //             icon: data.success ? "success" : "error",
-    //             text: data.message
-    //         });
-    //     })
-    //     .finally(() => fetchData());
-    // };
-
     return (
         <Pane padding={20}>
             <Pane display="flex" justifyContent="space-between" alignItems="center" marginBottom={20}>
